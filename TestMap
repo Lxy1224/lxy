@@ -1,0 +1,87 @@
+package com.stx.zh.c;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
+public class TestMap {
+	public static void main(String[] args) {
+//		Map<String,String> map = new HashMap<String,String>();
+//		map.put("us", "米国");
+//		map.put("en", "英国");
+//		map.put("cn", "台湾");       
+//		map.put("cn", "中国");
+//		System.out.println(map);
+//		System.out.println(map.get("us"));
+//		System.out.println(map.keySet());
+//		System.out.println(map.size());
+//		System.out.println(map.containsValue("中国"));
+//		System.out.println(map.containsKey("cn"));
+//		System.out.println(map.containsKey("xx"));
+//		ArrayList list = new ArrayList();
+//		list.add("yoyo1");
+//		list.add("yoyo2");
+//		list.add("yoyo3");
+//		
+//		Iterator it = list.iterator();
+//		while(it.hasNext())
+//		{
+//			System.out.println(it.next());
+//		}
+//		
+//		Iterator it = map.keySet().iterator();
+//		while(it.hasNext())
+//		{
+//			//System.out.println(it.next());
+//			String key = (String) it.next();
+//			System.out.println(map.get(key));
+//		}
+
+//--------------------------------------------------------------------------------
+		JavaBean bean1 = new JavaBean();
+		bean1.setName("yoyo1");
+		bean1.setStum(1);
+		
+		JavaBean bean2 = new JavaBean();
+		bean1.setName("yoyo2");
+		bean1.setStum(2);
+		
+		JavaBean bean3 = new JavaBean();
+		bean1.setName("yoyo3");
+		bean1.setStum(3);
+		
+		
+		ArrayList<JavaBean> list = new ArrayList<JavaBean>();
+		list.add(bean1);
+		ArrayList<JavaBean> list2 = new ArrayList<JavaBean>();
+		list2.add(bean2);
+		ArrayList<JavaBean> list3 = new ArrayList<JavaBean>();
+		list3.add(bean3);
+		
+//		Map<String,List> map = new HashMap<String,List>();
+//		map.put("cn", list);
+		
+		
+		for(JavaBean bean:list)
+		{
+			System.out.println(bean.getName());
+		}
+		
+//		Iterator it = map.keySet().iterator();
+//		while(it.hasNext())
+//		{
+//			String key = (String)it.next();
+//			System.out.println(map.get(key).get(0).toString());
+//		}
+
+		
+
+		
+
+	}
+	
+	
+}
